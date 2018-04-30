@@ -7,6 +7,9 @@
   display: inline-block;
   font-size: 18px;
 }
+html,body{
+  overflow-x: hidden;
+}
 body,
 div,
 dl,
