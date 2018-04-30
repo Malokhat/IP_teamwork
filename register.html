@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Travel Uzbekistan - Registration</title>
+	<link rel="stylesheet" href="libs/Lato/css/font.css">
+	<link rel="stylesheet" href="libs/css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<div class="main">
+
+		<header class="header">
+			<div class="wrapper">
+				<nav class="nav">
+					<div class="logo">
+						<a href="index.html"><img src="img/logo.png" alt="logo"></a>
+					</div>
+					<!-- ul.menu>li*3>a[#] -->
+					<ul class="menu">
+						<li><a href="contact_us.html" >contact us</a></li>						
+					</ul>
+				</nav>
+			</div>	
+			<div class="reg_form col-lg-5 col-sm-10 mx-auto pb-5">
+				<form id="registration_form" class="form-horizontal" action='' method="POST">
+					<div class="form-group row">
+						<!-- Username -->
+						<label class="col-2 col-form-label"for="fullname">Fullname</label>
+						<div class="col-10">
+							<input type="text" id="fullname" name="fullname" placeholder="Full Name" class="form-control" required>
+						</div>
+					</div>
+
+					<div class="form-group row">
+						<!-- Username -->
+						<label class="col-2 col-form-label"for="username">Username</label>
+						<div class="col-10">
+							<input type="text" id="username" name="username" placeholder="Usename" class="form-control" required>
+						</div>
+					</div>
+
+					<div class="form-group row">
+						<!-- E-mail -->
+						<label class="col-2 col-form-label" for="email">E-mail</label>
+						<div class="col-10">
+							<input type="text" id="email" name="email" placeholder="e@mail.com" class="form-control" required>
+						</div>
+					</div>
+
+					<div class="form-group row">
+						<!-- E-mail -->
+						<label class="col-2 col-form-label" for="password">Password</label>
+						<div class="col-10">
+							<input type="password" id="password" name="password" placeholder="123" class="form-control" required>
+						</div>
+					</div>
+
+					<div class="form-group row">
+						<!-- E-mail -->
+						<label class="col-2 col-form-label" for="password_confirm">Password (Confirm)</label>
+						<div class="col-10">
+							<input type="password" id="password_confirm" name="password_confirm" placeholder="123" class="form-control" required>
+						</div>
+					</div>
+
+					<div class="control-group">
+						<!-- Button -->
+						<div class="controls">
+							<button type="submit" class="btn btn-success float-right">Register</button>
+						</div>
+					</div>
+				</form>
+			</div>		
+		</header>
+		<footer class="footer">
+			<div class="wrapper">
+				<p class="text_footer">Copyright © 2018 - Travel Uzbekistan</p>
+			</div>
+		</footer>
+	</div>
+
+	
+	<script src="libs/js/jquery-3.2.1.min.js"></script>
+	<script src="libs/js/popper.min.js"></script>
+	<script src="libs/js/bootstrap.min.js"></script>
+	<script src="libs/js/bootstrap.bundle.min.js"></script>
+	<script src="libs/js/jquery.validate.min.js"></script>
+	<script src="js/script.js"></script>
+
+	<script>
+		$(function(){
+			$("#registration_form").validate({
+				rules: {
+					email: {
+						required: true,
+						email: true
+					}
+				}
+			});
+		})
+		
+	</script>
+</body>
+
+</html>
