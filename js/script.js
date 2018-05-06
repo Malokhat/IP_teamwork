@@ -1,3 +1,5 @@
+
+
 window.onload = function(){
 	// var btn = document.querySelector('.bars');
 	// var menu = document.querySelector('.menu_sm');
@@ -26,12 +28,12 @@ window.onload = function(){
 }
 $(function(){
 	changeBackGraound();
-	$("#carouselExampleIndicators").on('slide.bs.carousel', function (e) {
+	$("#upcomingTourCarousel").on('slide.bs.carousel', function (e) {
 		changeBackGraound();
 	});
 });
 
 function changeBackGraound(){
-	var url = $(".carousel-item.active").data("img");
-	$(".testimonials").css("background","transparent url("+url+") no-repeat center center");
+	var url = $("#upcomingTourCarousel .carousel-item.active").data("img");
+	$(".upcomingTours").css("background","transparent url("+url+") no-repeat center center");
 }
