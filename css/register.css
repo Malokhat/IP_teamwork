@@ -1,0 +1,126 @@
+body, #slider, .main, .slide-content
+{
+    
+	margin: 0;
+	padding: 0;
+	background-color: #ccccFF;
+	font-family: sans-serif;
+	width: 100%;
+	height: 100vh;
+	overflow-x: hidden;
+	font-family: blod;
+	font-size: 22px;
+}
+
+.slide{
+	background-size: cover;
+	background-position: center;
+
+}
+
+
+.slide-content {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;  
+}
+
+#one {
+
+	position: relative;
+	padding-left: 30px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	color: white;
+	margin: auto;
+	border-radius: 10px;
+	flex-direction: column;
+	justify-content: center;
+	align-items: right;
+	width: 1200px;
+	height: 600px;
+	box-shadow: 0 10px 20px rgba(0,0,0,.5);
+	
+}
+#one p
+{
+	margin: 0;
+	padding: 0;
+	color: black; 
+}
+.container{
+	width: 800px;
+	magin:40px 0;
+	display: table;
+	box-sizing: border-box;
+
+}
+#one input[type="checkbox"]{
+	width: 15%;
+}
+#one input[type="text"], input[type="number"], input[type="password"]
+{
+	width: 40%;
+	margin-bottom: 20PX;
+	border: none;
+	border-bottom: 1px solid #fff;
+	background: transparent;
+	outline: none;
+	height: 40px;
+	color: #fff;
+	font-size: 16px;
+
+}
+.column{
+	display: table-cell;
+	padding: 10px;
+}
+::placehplder
+{
+	color: rgba(255, 255, 255, .5);
+}
+
+
+.image
+{
+	margin: 10px 50px;
+} 	
+
+.image img{
+	width:250px;
+	height: 180px;
+	padding: 8px;
+}
+
+.image img:hover{
+	transform: scale(1.1);
+}
+
+.arrow{
+	cursor: pointer;
+	position: absolute;
+	top: 50%;
+	margin-top: -50px;
+	width: 0;
+	height: 0;
+	border-style: solid;
+}
+
+#arrow-left{
+	border-width: 30px 40px 30px 0;
+	border-color: transparent black transparent transparent;
+	left: 0;
+	margin-left: 30px; 
+}
+
+#arrow-right{
+	border-width: 30px 0 30px 40px;
+	border-color: transparent transparent transparent black;
+	right: 0;
+	margin-right: 30px; 
+}
+
+
+
