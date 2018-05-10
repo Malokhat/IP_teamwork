@@ -4,6 +4,7 @@ body, #slider, .main, .slide-content
 {
     
 	margin: 0;
+	
 	padding: 0;
     
 	font-family: sans-serif;
@@ -94,10 +95,12 @@ body, #slider, .main, .slide-content
 	width:250px;
 	height: 180px;
 	padding: 8px;
+	transition: all .3s;
 }
 
 .image img:hover{
 	transform: scale(1.1);
+	transition: all .3s;
 }
 
 .arrow{
