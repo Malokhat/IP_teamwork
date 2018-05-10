@@ -1,106 +1,132 @@
+
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-	<meta charset="UTF-8">
-	<title>Travel Uzbekistan - Registration</title>
-	<link rel="stylesheet" href="libs/Lato/css/font.css">
-	<link rel="stylesheet" href="libs/css/bootstrap.min.css">
-	<link rel="stylesheet" href="css/style.css">
+	<meta charset="utf-8">
+	<title>Registration Form</title>
+	<link rel="stylesheet" type="text/css" href="css/register.css">
 </head>
 <body>
-	<div class="main">
+<div class="main">
+  <div id="arrow-left" class="arrow"></div>	
+ 
+	<div id="slider">
 
-		<header class="header">
-			<div class="wrapper">
-				<nav class="nav">
-					<div class="logo">
-						<a href="index.html"><img src="img/logo.png" alt="logo"></a>
-					</div>
-					<!-- ul.menu>li*3>a[#] -->
-					<ul class="menu">
-						<li><a href="contact_us.html" >contact us</a></li>						
-					</ul>
-				</nav>
-			</div>	
-			<div class="reg_form col-lg-5 col-sm-10 mx-auto pb-5">
-				<form id="registration_form" class="form-horizontal" action='' method="POST">
-					<div class="form-group row">
-						<!-- Username -->
-						<label class="col-2 col-form-label"for="fullname">Fullname</label>
-						<div class="col-10">
-							<input type="text" id="fullname" name="fullname" placeholder="Full Name" class="form-control" required>
-						</div>
-					</div>
+		<div class="slide slide1">                                           
+			<div class="slide-content"> 
+				<span>
 
-					<div class="form-group row">
-						<!-- Username -->
-						<label class="col-2 col-form-label"for="username">Username</label>
-						<div class="col-10">
-							<input type="text" id="username" name="username" placeholder="Usename" class="form-control" required>
-						</div>
-					</div>
-
-					<div class="form-group row">
-						<!-- E-mail -->
-						<label class="col-2 col-form-label" for="email">E-mail</label>
-						<div class="col-10">
-							<input type="text" id="email" name="email" placeholder="e@mail.com" class="form-control" required>
-						</div>
-					</div>
-
-					<div class="form-group row">
-						<!-- E-mail -->
-						<label class="col-2 col-form-label" for="password">Password</label>
-						<div class="col-10">
-							<input type="password" id="password" name="password" placeholder="123" class="form-control" required>
-						</div>
-					</div>
-
-					<div class="form-group row">
-						<!-- E-mail -->
-						<label class="col-2 col-form-label" for="password_confirm">Password (Confirm)</label>
-						<div class="col-10">
-							<input type="password" id="password_confirm" name="password_confirm" placeholder="123" class="form-control" required>
-						</div>
-					</div>
-
-					<div class="control-group">
-						<!-- Button -->
-						<div class="controls">
-							<button type="submit" class="btn btn-success float-right">Register</button>
-						</div>
-					</div>
-				</form>
-			</div>		
-		</header>
-		<footer class="footer">
-			<div class="wrapper">
-				<p class="text_footer">Copyright © 2018 - Travel Uzbekistan</p>
-			</div>
-		</footer>
+	<div id="one">
+	<div class="image">
+		<form>
+		<img src="img/tashkent.jpg">
+		<img src="img/samarqand_tour.jpg">
+		<img src="img/bukhara_tour.jpg">
+		<img src="img/khiva_tour.jpg">
 	</div>
+		
+		<input type="checkbox" >Tashkent   
+		<input type="checkbox" >Samarqand   
+		<input type="checkbox" >Bukhara   
+		<input type="checkbox" >Khiva   <br>
+	<div class="container">
+	<div class="column">	
+		<p>Duration:</p>
+		<input type="number" placeholder="Duration" name="duration" >
+		<p>Number of Turists:</p>
+		<input type="text" placeholder="Number of people" name="numofp" >
+		<p>Date</p>
+		  <input type="date" name="date">
+	</div>
+	<div class="column">	  
+		<p>Full Name:</p>
+		<input type="text" placeholder="Full name" name="fullname">
+		<p>Passport Number:</p>
+		<input type="text" placeholder="Passport number" name="passportnum">
+		<p>Phone Number</p>
+		<input type="number" placeholder="Phone number" name="phonnum">
+		<p>Enter e-mail</p>
+		<input type="text" placeholder="E-mail" name="e-mail">
+	</div>
+	</div>	
+		</form>
+	</div>
+				</span>
+			</div>
+		</div>
+
+
+	<div class="slide slide2">                                           
+			<div class="slide-content">
+				<span>
+					<h1>Page22222222222</h1>
+					<div class="progress">
+  							<div class="progress-bar" role="progressbar" style="width: 25%;
+  							" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+					</div>
+				</span>
+			</div>
+		</div>
 
 	
-	<script src="libs/js/jquery-3.2.1.min.js"></script>
-	<script src="libs/js/popper.min.js"></script>
-	<script src="libs/js/bootstrap.min.js"></script>
-	<script src="libs/js/bootstrap.bundle.min.js"></script>
-	<script src="libs/js/jquery.validate.min.js"></script>
-	<script src="js/script.js"></script>
 
-	<script>
-		$(function(){
-			$("#registration_form").validate({
-				rules: {
-					email: {
-						required: true,
-						email: true
-					}
-				}
-			});
-		})
-		
-	</script>
+	<div class="slide slide3">                                               
+			<div class="slide-content">
+				<span>
+					<h1>Page33333333333</h1>
+				</span>
+			</div>
+	</div>
+	</div>
+	  <div id="arrow-right" class="arrow"></div>	
+
+<script>
+	let sliderImages = document.querySelectorAll('.slide'),
+		arrowLeft = document.querySelector('#arrow-left'),
+		arrowRight = document.querySelector('#arrow-right'),
+		current = 0;
+
+function reset(){
+	for(let i=0; i < sliderImages.length; i++)
+	{
+	sliderImages[i].style.display = 'none';
+	}
+}
+
+function startSlide(){
+	reset();
+	sliderImages[0].style.display ='block';
+}
+function slideLeft(){
+	reset();
+	sliderImages[current -1].style.display ='block';
+	current --;
+}
+
+function slideRight(){
+	reset();
+	sliderImages[current +1].style.display ='block';
+	current ++;
+}
+
+arrowLeft.addEventListener('click', function(){
+	if(current === 0){
+	current = sliderImages.length;
+}
+   slideLeft();
+
+});
+
+arrowRight.addEventListener('click', function(){
+	if(current === sliderImages.length -1){
+	current = -1;
+}
+slideRight();
+});
+
+startSlide();
+
+</script>
+</div>	
 </body>
-
 </html>
