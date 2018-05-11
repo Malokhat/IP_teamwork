@@ -37,3 +37,10 @@ function changeBackGraound(){
 	var url = $("#upcomingTourCarousel .carousel-item.active").data("img");
 	$(".upcomingTours").css("background","transparent url("+url+") no-repeat center center");
 }
+$(window).scroll(function(){
+	var sticky = $('header'),
+		scroll = $(window).scrollTop();
+  
+	if (scroll >= 450) sticky.addClass('fixed-header');
+	else sticky.removeClass('fixed-header');
+  });

@@ -1,12 +1,3 @@
-.btn-main {
-  text-transform: uppercase;
-  color: #fff;
-  padding: 19px 79px;
-  border-radius: 5px;
-  border: 3px solid;
-  display: inline-block;
-  font-size: 18px;
-}
 body,
 div,
 dl,
@@ -33,10 +24,6 @@ td {
   margin: 0;
   padding: 0;
 }
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
 fieldset,
 img,
 abbr, 
@@ -55,9 +42,18 @@ var {
   font-style: normal;
   font-weight: normal;
 }
+
 ul li {
   list-style: none;
+  color: white;
+  float: right;
+  display: block;
+  padding: 10px; 
+  text-decoration: none;
+  font-size: 17px;
+  margin: 0;
 }
+
 caption,
 th {
   text-align: left;
@@ -74,15 +70,7 @@ h6 {
   font-size: 100%;
   font-weight: normal;
 }
-sup {
-  vertical-align: text-top;
-}
-sub {
-  vertical-align: text-bottom;
-}
-input,
-textarea,
-select {
+input{
   font-family: inherit;
   font-size: inherit;
   font-weight: inherit;
@@ -90,9 +78,6 @@ select {
 legend {
   color: #000;
 }
-article,
-aside,
-details,
 figcaption,
 figure,
 footer,
@@ -115,10 +100,34 @@ a {
 body {
   font-family: 'Lato-bol';
   min-width: 320px;
+  background-color:   #FFDEAD;
+}
+.header{
+    overflow: hidden;
+  box-shadow: 0 10px 20px rgba(0,0,0,.5);
+  position: fixed;
+  top: 0;
+  height: 70px;
+  width: 100%;
+  z-index: 3;
+}
+.header .wrapper{
+  display: flex;
+  justify-content: space-between;
+}
+.header .wrapper .logo{
+  margin-top: 9px;
+}
+.header .wrapper .menu{
+  margin-top: 18px;
+}
+.fixed-header{
+  position: fixed;
+  top:0; left:0;
+  width: 100%;
 }
 .main {
-  max-width: 1600px;
-  margin: auto;
+  max-width: 100%;
 }
 .wrapper {
   max-width: 1240px;
@@ -235,7 +244,9 @@ body {
   font-size: 16px;
 }
 .upcomingTours {
-  padding: 160px 0;
+  height: 800px;
+margin-top: -90px;
+
 }
 .upcomingTours .carousel-indicators li {
   width: 10px;
@@ -245,13 +256,13 @@ body {
 .upcomingTours .carousel-item {
   text-align: center;
   color: #fff;
-}
-.upcomingTours .carousel-item img {
-  margin: auto;
+  padding: 290px;
+font-size: 40px;
 }
 .upcomingTours .carousel-indicators {
   bottom: -40px;
 }
+
 .rewview {
   padding-top: 100px;
 }
@@ -279,19 +290,22 @@ body {
   max-width: 50%;
 }
 .rewview_boxes .box img {
-  width: 100%;
-  height: 100%;
+  width: 500px;
+  height: 300px;
+  padding: 10px;
 }
-.rewview_boxes .box .desc {
-  position: absolute;
-}
+
 .footer{
   margin: 20px;
   height: 100px;
   text-align: center;
 }
 .footer .wrapper .text_footer{
-  margin-top: 40px;
+  margin: 40px;
+}
+.footer .wrapper i {
+  font-size: 30px;
+  margin: 10px;
 }
 .caption{
   line-height: 1cm;
