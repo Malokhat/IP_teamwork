@@ -1,6 +1,5 @@
 body{
 	background-image: url(../img/new.jpeg);
-
 }
 body, #slider, .main, .slide-content{   
 	margin: 0;	
@@ -20,6 +19,7 @@ body, #slider, .main, .slide-content{
 	text-align: center;
 }
 #one {
+	text-align: center;
 	position: relative;
 	padding-left: 30px;
 	padding-top: 20px;
@@ -46,15 +46,19 @@ body, #slider, .main, .slide-content{
 	box-sizing: border-box;
 }
 .column{
+	text-align: center;
+	padding-top: 20px;
 	text-align: left;
 	display: table-cell;
 }
+
 .column3{
 	display: table-cell;
 	padding: 20px;
 }
 #one input[type="checkbox"]{
 	width: 15%;
+	text-align: center;
 }
 #one input[type="text"], input[type="number"], input[type="password"] , select {
 	width: 40%;
