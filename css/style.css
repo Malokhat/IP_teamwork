@@ -51,8 +51,12 @@ ul li {
   padding: 10px; 
   text-decoration: none;
   font-size: 17px;
+<<<<<<< HEAD
   margin: 0;
 }
+=======
+  margin: 0;}
+>>>>>>> parent of 8c9e2f1... minor changes
 
 caption,
 th {
@@ -126,8 +130,15 @@ body {
   top:0; left:0;
   width: 100%;
 }
+<<<<<<< HEAD
 .main {
   max-width: 100%;
+=======
+
+.main {
+  max-width: 100%;
+  margin-top:  90px;
+>>>>>>> parent of 8c9e2f1... minor changes
 }
 .wrapper {
   max-width: 1240px;
@@ -259,6 +270,12 @@ margin-top: -90px;
   padding: 290px;
 font-size: 40px;
 }
+<<<<<<< HEAD
+=======
+.upcomingTours .carousel-item img {
+  margin: auto;
+  height: 200px;}
+>>>>>>> parent of 8c9e2f1... minor changes
 .upcomingTours .carousel-indicators {
   bottom: -40px;
 }
