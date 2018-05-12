@@ -130,7 +130,20 @@ body {
   width: 100%;
   background-color: black;
 }
-
+.header2{
+  position: fixed;
+  top:0; 
+  left:0;
+  width: 100%;
+  background-color: black;
+}
+.header2 .wrapper{
+  display: flex;
+  justify-content: space-between;
+}
+.btn{
+  margin-top: 50px;
+}
 .main {
   max-width: 100%;
   margin-top:  90px;
