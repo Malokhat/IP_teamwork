@@ -51,8 +51,7 @@ ul li {
   padding: 10px; 
   text-decoration: none;
   font-size: 17px;
-  margin: 0;
-}
+  margin: 0;}
 
 caption,
 th {
@@ -102,32 +101,39 @@ body {
   min-width: 320px;
   background-color:   #FFDEAD;
 }
-.header{
-    overflow: hidden;
-  box-shadow: 0 10px 20px rgba(0,0,0,.5);
-  position: fixed;
-  top: 0;
-  height: 70px;
-  width: 100%;
-  z-index: 3;
-}
+
 .header .wrapper{
   display: flex;
   justify-content: space-between;
 }
 .header .wrapper .logo{
-  margin-top: 9px;
+  margin-top: 5px;
 }
 .header .wrapper .menu{
-  margin-top: 18px;
+  margin-top: 13px;
 }
+.header{
+    overflow: absolute;
+  box-shadow: 0 10px 20px rgba(0,0,0,.5);
+  
+  position: absolute;
+  top: 0;
+  height: 60px;
+  width: 100%;
+  z-index: 3;
+}
+
 .fixed-header{
   position: fixed;
-  top:0; left:0;
+  top:0; 
+  left:0;
   width: 100%;
+  background-color: black;
 }
+
 .main {
   max-width: 100%;
+  margin-top:  90px;
 }
 .wrapper {
   max-width: 1240px;
@@ -245,7 +251,7 @@ body {
 }
 .upcomingTours {
   height: 800px;
-margin-top: -90px;
+  margin-top: -180px;
 
 }
 .upcomingTours .carousel-indicators li {
@@ -256,9 +262,12 @@ margin-top: -90px;
 .upcomingTours .carousel-item {
   text-align: center;
   color: #fff;
-  padding: 290px;
+  padding: 300px;
 font-size: 40px;
 }
+.upcomingTours .carousel-item img {
+  margin: auto;
+  height: 200px;}
 .upcomingTours .carousel-indicators {
   bottom: -40px;
 }
@@ -506,5 +515,17 @@ label.error{
 }
 .testimonials .carousel-indicators {
   bottom: -40px;
+}
+
+.samarqand-carousel{
+  background: transparent url("../img/samarqand_tour.jpg") no-repeat center center;
+}
+
+.bukhara-carousel{
+  background: transparent url("../img/bukhara_tour.jpg") no-repeat center center;
+}
+
+.khiva-carousel{
+  background: transparent url("../img/khiva_tour.jpg") no-repeat center center;
 }
 
