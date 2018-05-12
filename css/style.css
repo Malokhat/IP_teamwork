@@ -112,6 +112,7 @@ body {
 .header .wrapper .menu{
   margin-top: 13px;
 }
+<<<<<<< HEAD
 .header{
     overflow: absolute;
   box-shadow: 0 10px 20px rgba(0,0,0,.5);
@@ -299,11 +300,12 @@ font-size: 40px;
   max-width: 50%;
 }
 .rewview_boxes .box img {
-  width: 500px;
-  height: 300px;
-  padding: 10px;
+  width: 100%;
+  height: 100%;
 }
-
+.rewview_boxes .box .desc {
+  position: absolute;
+}
 .footer{
   margin: 20px;
   height: 100px;
