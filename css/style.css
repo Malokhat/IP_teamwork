@@ -45,6 +45,7 @@ var {
 
 ul li {
   list-style: none;
+<<<<<<< HEAD
   color: white;
   float: right;
   display: block;
@@ -53,6 +54,9 @@ ul li {
   font-size: 17px;
   margin: 0;}
 
+=======
+}
+>>>>>>> caba790b100f4001fbc4421c95535818183186eb
 caption,
 th {
   text-align: left;
@@ -132,9 +136,11 @@ body {
   background-color: black;
 }
 
+=======
+>>>>>>> caba790b100f4001fbc4421c95535818183186eb
 .main {
-  max-width: 100%;
-  margin-top:  90px;
+  max-width: 1600px;
+  margin: auto;
 }
 .wrapper {
   max-width: 1240px;
@@ -268,7 +274,11 @@ font-size: 40px;
 }
 .upcomingTours .carousel-item img {
   margin: auto;
+<<<<<<< HEAD
   height: 200px;}
+=======
+}
+>>>>>>> caba790b100f4001fbc4421c95535818183186eb
 .upcomingTours .carousel-indicators {
   bottom: -40px;
 }
