@@ -148,6 +148,20 @@ body {
   display: flex;
   justify-content: space-between;
 }
+.card {
+  height: 370px;
+width: 315px;
+}
+.wrapper1{
+    display: flex;
+  justify-content: space-between;
+  background-color: black;
+}
+
+.lightbox img {
+  height: 250px;
+  width: 340px;
+}
 .btn{
   margin-top: 50px;
 }
