@@ -9,6 +9,9 @@
 <div class="main">
 	<div id="arrow-left" class="arrow"></div>	
  	<div id="slider">
+		 <form id="registration_form">
+
+		 
 		<div class="slide slide1">                                           
 			<div class="slide-content"> 
 				<span>
@@ -26,23 +29,23 @@
 						<div class="container">
 							<div class="column">	
 								<p>Duration:</p>
-								<input type="number" placeholder="Duration" name="duration" >
+								<input type="number" placeholder="Duration" required name="duration" >
 								<p>Number of Turists:</p>
-								<input type="text" placeholder="Number of people" name="numofp" >
+								<input type="text" placeholder="Number of people" required name="numofp" >
 								<p>Date</p>
 		  						<input type="date" name="date">
 							</div>
 							<div class="column">	  
 								<p>Full Name:</p>
-								<input type="text" placeholder="Full name" name="fullname">
+								<input type="text" placeholder="Full name" required name="fullname">
 								<p>Passport Number:</p>
-								<input type="text" placeholder="Passport number" name="passportnum">
+								<input type="text" placeholder="Passport number" required name="passportnum">
 							</div>
 							<div class="column">
 								<p>Phone Number</p>
-								<input type="number" placeholder="Phone number" name="phonnum">
+								<input type="number" placeholder="Phone number" required name="phonnum">
 								<p>Enter e-mail</p>
-								<input type="text" placeholder="E-mail" name="e-mail">
+								<input type="text" placeholder="E-mail" required name="email">
 							</div>
 						</div>	
 	
@@ -202,23 +205,29 @@
 <div class="container">
 							<div class="column">	
 								<p>Username:</p>
-								<input type="text" placeholder="Username" name="Username" >
+								<input type="text" placeholder="Username" required name="Username" >
 							</div>
 							<div class="column">	  
 								<p>Password</p>
-								<input type="text" placeholder="Full name" name="fullname">
+								<input type="text" placeholder="Full name" required name="fullname">
 							</div>
 							<div class="column">
-								<a href="#" class="btn">Submit</a>							
+								<button type="submit" href="#" class="btn">Submit</button>							
 							</div>
 </div> 
 						</div>
 					</span>
 				</div>
 			</div>
-		</div>
-	  <div id="arrow-right" class="arrow"></div>	
-		<script>
+		</form>
+	</div>
+	  <div id="arrow-right" class="arrow"></div>
+	<script src="libs/js/jquery-3.2.1.min.js"></script>
+	<script src="libs/js/popper.min.js"></script>
+	<script src="libs/js/bootstrap.min.js"></script>
+	<script src="libs/js/bootstrap.bundle.min.js"></script>
+	<script src="libs/js/jquery.validate.min.js"></script>	
+	<script>
 		let sliderImages = document.querySelectorAll('.slide'),
 		arrowLeft = document.querySelector('#arrow-left'),
 		arrowRight = document.querySelector('#arrow-right'),
@@ -264,6 +273,28 @@
 	slideRight();
 });
 	startSlide();
+
+
+
+	$(function(){
+		jQuery.validator.addMethod("lettersonly", function(value, element) {
+			return this.optional(element) || /^[a-z]+$/i.test(value);
+		}, "Letters only please"); 
+
+			$("#registration_form").validate({
+				ignore: "",
+				rules: {
+					email: {
+						required: true,
+						email: true
+					},
+					fullname:{
+						required: true,
+						lettersonly: true
+					}
+				}
+			});
+		})
 </script>
 </div>	
 </body>
