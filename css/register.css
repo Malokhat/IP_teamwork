@@ -186,5 +186,8 @@ input.error {
 	border: 2px solid red;
   }
   label.error{
+	font-size: 15px;
+	display: block;
+	margin-top: -12px;
 	color: red;
   }
